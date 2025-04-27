@@ -15,8 +15,9 @@ function App() {
   const swap = ()=>{
     setFrom(to)
     setTo(from)
-    setConvertedAmount(amount)
-    setAmount(convertedAmount)
+    setConvertedAmount(0)
+    setAmount(amount)
+
   }
 
     const convert = () =>{
@@ -67,7 +68,7 @@ function App() {
                                  onCurrencyChange={(currency)=>setTo(currency)}
                                  selectCurrency={to}
                                  amountDisable={true}
-
+                                 
                             />
                         </div>
                         <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg" >
